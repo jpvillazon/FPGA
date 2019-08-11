@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity and_gate is
+
+	port
+	(
+		-- Input ports
+		A,B	: in  std_logic;
+
+		-- Output ports
+		S		: out std_logic
+	);
+end and_gate;
+
+architecture and_gate_behavior of and_gate is
+begin
+
+	S <= A and B;
+	
+end and_gate_behavior;
